@@ -1,6 +1,5 @@
 Codebook
 ========
-Codebook was generated on 2015-10-21 19:56:08 during the same process that generated the dataset. See `run_analysis.md` or `run_analysis.html` for details on dataset creation.
 
 Variable list and descriptions
 ------------------------------
@@ -275,7 +274,7 @@ dtTidy[, .N, by=c(names(dtTidy)[grep("^feat", names(dtTidy))])]
 Save to file
 ------------
 
-Save data table objects to a tab-delimited text file called `DatasetHumanActivityRecognitionUsingSmartphones.txt`.
+Save data table objects to a tab-delimited text file called `project_dataset.txt`.
 
 
 ```r
