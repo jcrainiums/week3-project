@@ -5,12 +5,10 @@ sapply(packages, require, character.only=TRUE, quietly=TRUE)
 
 # set the path for use later in case we need to return
 path <- getwd()
-path
 
 # download the data set and create the directory if it doesn't exist yet
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- "Dataset.zip"
-if (!file.exists(path)) {dir.create(path)}
 download.file(url, file.path(path, f))
 
 # Change this to use unzip
