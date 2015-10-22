@@ -115,3 +115,8 @@ r1 == r2
 setkey(dt, subject, activity, featDomain, featAcceleration, featInstrument, featJerk, featMagnitude, featVariable, featAxis)
 dtTidy <- dt[, list(count = .N, average = mean(value)), by=key(dt)]
 
+# save the data set
+f <- file.path(path, "project_dataset.txt")
+write.table(dtTidy, f, quote=FALSE, sep="\t", row.names=FALSE)
+
+
